@@ -151,3 +151,66 @@ body {
 #footer {
     background-color: rgb(225, 225, 225, 0.5);
 }
+
+/*responsividade*/
+/* Correção da barra branca lateral */
+html, body {
+    overflow-x: hidden;
+}
+
+/* Ajuste dos ícones na seção de contato para telas menores */
+@media (max-width: 768px) {
+    .social-icons {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px; /* Reduz o espaçamento entre os ícones */
+    }
+
+    .social-btn img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .social-item p {
+        font-size: 1rem;
+    }
+}
+
+/* Melhor ajuste para telas menores */
+@media (max-width: 480px) {
+    .social-btn img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .social-item p {
+        font-size: 0.9rem;
+    }
+}
+/* Ajuste do tamanho do texto na seção Hero para telas menores */
+@media (max-width: 992px) {
+    .display-1 {
+        font-size: 4rem !important; /* Reduz tamanho do título */
+    }
+    .lead {
+        font-size: 1.5rem !important; /* Reduz subtítulo */
+    }
+}
+
+@media (max-width: 768px) {
+    .display-1 {
+        font-size: 3rem !important;
+    }
+    .lead {
+        font-size: 1.3rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .display-1 {
+        font-size: 2.5rem !important;
+    }
+    .lead {
+        font-size: 1.1rem !important;
+    }
+}
