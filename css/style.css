@@ -1,3 +1,8 @@
+/*teste responsividade*/
+body, h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Poppins', sans-serif !important;
+}
+
 /*navbar n hero section style*/
 body {
     font-family: 'Poppins', sans-serif;
@@ -212,5 +217,25 @@ html, body {
     }
     .lead {
         font-size: 1.1rem !important;
+    }
+}
+
+/* Ajuste do Hero para telas menores */
+@media (max-width: 768px) {
+    .display-1 {
+        font-size: 3.5rem !important;
+        text-align: center; /* Centraliza o título */
+    }
+    .lead {
+        font-size: 1.4rem !important;
+        text-align: center;
+    }
+}
+
+/* Força quebra de linha no título em celulares */
+@media (max-width: 480px) {
+    .display-1 {
+        font-size: 3rem !important;
+        white-space: pre-line; /* Permite quebra de linha */
     }
 }
